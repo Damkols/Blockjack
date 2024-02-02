@@ -3,9 +3,11 @@ import React from "react";
 const Header = () => {
   return (
     <div className="flex justify-between border-b border-yellow-200 p-5">
-      <div>
-        <img src="" alt="" />
-        <p className="font-bold text-yellow-300">Blockjack</p>
+      <div className="flex gap-2">
+        <img src="../../cards/A-H.png" className="w-4 h-5" alt="" />
+        <a href="/" className="font-bold text-yellow-300">
+          Blockjack
+        </a>
       </div>
       <div className="flex gap-20">
         <p className="hover:text-yellow-400 cursor-pointer">About</p>

@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../components/Header";
+import { FC } from "react";
+import { Link } from "react-router-dom";
 
-const Home = () => {
+const Home: FC = () => {
   return (
     <div>
-      <Header />
       <main className="flex justify-center gap-4 mt-10 flex-col">
         <div className="flex justify-around">
           <div className="flex flex-col items-center justify-center gap-5">
@@ -14,12 +14,12 @@ const Home = () => {
             <p className="text-center text-xl">
               Welcome to the Blockjack Cartesi Game.
             </p>
-            <a
-              href="/game"
+            <Link
+              to="/game"
               className="p-3 border border-yellow-200 hover:border-yellow-400"
             >
               Start Game
-            </a>
+            </Link>
           </div>
           <img src="../../cards/BACK.png" alt="" className="w-1/4" />
         </div>
